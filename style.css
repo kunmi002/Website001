@@ -1,0 +1,367 @@
+* {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.mainContainer {
+    width: 100%;
+    
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    padding: 1rem 5rem;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    font-size: small;
+}
+
+.nav-bar img{
+    position: absolute;
+    left: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 5rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    padding: 0%;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    justify-content: center;
+    align-content: center;
+}
+
+.mySlides img{
+    border-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.mySlides h1{
+    position: absolute;
+    float: left;
+    top: 100px;
+    left: 100px;
+    color: white;
+    width: 400px;
+}
+
+.mySlides a{
+    font-size: small;
+    position: absolute;
+    float: left;
+    left: 100px;
+    bottom: 15rem;   
+    text-decoration: none;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    color: white;
+    background-color: purple;
+    border-radius: 26px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.services h1{
+    text-align: center;
+}
+
+.services p{
+   width: 60rem;
+   margin-left: 200px;
+   margin-bottom: 23px;
+   line-height: 2rem;
+   text-align: center;
+}
+
+.services2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.services2 h3{
+    width: 400px;
+}
+
+.services2 p{
+    width: 400px;
+}
+
+.imgContainer{
+     width: 27rem;
+}
+
+.textContainer{
+    width: 27rem;
+    line-height: 2rem;
+}
+
+.services3 {
+   display: flex;
+   flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.services3 h3{
+   width: 400px;
+}
+
+.services3 p{
+    width: 400px;
+}
+
+.product {
+   
+    justify-content: center;
+    align-content: center;
+}
+
+.product h1{
+    text-align: center;
+}
+
+.product p{
+    margin-left: 200px;
+    width: 900px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.product2 div{
+    display: inline;     
+    justify-content: center;
+    align-content: center;
+}
+
+.product2 img{
+   
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product2 a{
+    
+    margin-top: 20rem   ;
+    margin-left: 35rem;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-right: 20px;
+    padding-bottom: 7px;
+    color: white;
+    background-color: purple;
+    border-radius: 26px;
+    font-size: small;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    padding-left: 50px;
+    line-height: 50px;
+    
+}
+
+.footer ol li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 5rem;
+    list-style: square;
+    /* display: flex;
+  flex: 0.5; */
+}
+
+.footer h3{
+   
+    color: #9e9e9e;
+}
+
+.footer h4{
+    font-weight: normal;
+}
+
+.sm{
+    display: block;
+}
+
+.address h5{
+    line-height: 2rem;
+    font-weight: normal;
+}
+
+.address a{
+    color: white;
+}
+
+.Contact{
+   
+    left: 29rem;
+}
+
+.Contact a{
+    color: white;
+}
+
+.abo{
+ 
+    font-weight: lighter;
+}
+
+.solution{
+   
+    font-weight: lighter;
+}
+
+.Offers{
+    font-weight: lighter;
+}
+
+.part{
+    color: white;
+    background-color: black;
+}
+
+.blog{
+    margin-top: 10rem;
+}
+
+.btextContainer{
+  width: 17rem;
+  line-height: 2rem;
+}
+
+.blog a{
+   text-decoration: none
+}
+
+.blog div{
+  
+        flex-direction: row;
+    justify-content: center;
+    align-content: center;    
+}
+
+.blog h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
